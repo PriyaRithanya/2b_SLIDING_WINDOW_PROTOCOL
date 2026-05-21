@@ -10,8 +10,7 @@ To write a python program to perform sliding window protocol
 6. Stop the Program
 ## PROGRAM
 ```
-client side
-
+client side:
 import socket
 s = socket.socket()
 s.connect(('localhost', 9000))
@@ -23,8 +22,7 @@ while True:
     s.send("Acknowledgement received from client".encode())
 s.close()
 
-server side
-
+server side:
 import socket
 s = socket.socket()
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
